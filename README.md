@@ -1,6 +1,6 @@
 # npmtest-weather-js
 
-#### test coverage for  [weather-js (v2.0.0)](http://github.com/devfacet/weather)  [![npm package](https://img.shields.io/npm/v/npmtest-weather-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-weather-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-weather-js.svg)](https://travis-ci.org/npmtest/node-npmtest-weather-js)
+#### basic test coverage for  [weather-js (v2.0.0)](http://github.com/devfacet/weather)  [![npm package](https://img.shields.io/npm/v/npmtest-weather-js.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-weather-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-weather-js.svg)](https://travis-ci.org/npmtest/node-npmtest-weather-js)
 
 #### A module for obtaining weather information
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-weather-js/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-weather-js/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-weather-js/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-weather-js/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-weather-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-weather-js/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-weather-js/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-weather-js/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-weather-js/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-weather-js/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-weather-js/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-weather-js/build/coverage.html/index.html)
 
@@ -89,7 +89,8 @@
         "test:coveralls": "cat reports/coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
         "test:unit": "mkdir -p reports/ && NODE_ENV=test multi='spec=- xunit=reports/mocha-xunit.xml' istanbul cover _mocha -- --timeout 10000 -R mocha-multi && istanbul check-coverage"
     },
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "bin": {}
 }
 ```
 
